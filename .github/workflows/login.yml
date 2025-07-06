@@ -79,7 +79,7 @@ jobs:
             echo "🚀 Iniciando contenedor actualizado..."
             sudo docker run -d --name reset-password-service \
               --env-file /home/ec2-user/.env.reset-password-service \
-              -p 4004:4004 \
+              -p 4012:4012 \
               --network my_global_network \
               agente47/reset-password-service:latest
 
