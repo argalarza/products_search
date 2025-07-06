@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  search-products-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: search-products-service
+    ports:
+      - "4012:4012"
+    env_file:
+      - .env
+    restart: always
